@@ -986,6 +986,18 @@ _register_template(
     replace_jinja_template=False,
 )
 
+_register_template(
+    name="qwen_ja",
+    format_user=StringFormatter(slots=["<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_system=StringFormatter(slots=["<|im_start|>system\n{{content}}<|im_end|>\n"]),
+    format_observation=StringFormatter(slots=["<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_separator=EmptyFormatter(slots=["\n"]),
+    default_system="あなたは優秀で誠実な日本人のアシスタントです。",
+    stop_words=["<|im_end|>"],
+    replace_eos=True,
+    replace_jinja_template=False,
+)
+
 
 _register_template(
     name="qwen2_vl",
