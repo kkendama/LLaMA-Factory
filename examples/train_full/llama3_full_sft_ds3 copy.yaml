@@ -1,0 +1,36 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-0.5B
+
+### method
+stage: pt
+do_train: true
+finetuning_type: full
+
+### dataset
+dataset: abeja1,oscar_score2,oscar_score3,oscar_score4,oscar_score5,c4_score3,c4_score4,cosmopedia_ja,wiki_ja
+cutoff_len: 8192
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: saves/qwen2.5-0.5b/full/cpt
+logging_steps: 1
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 32
+learning_rate: 1.0e-4
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### eval
+val_size: 1000
+per_device_eval_batch_size: 4
+eval_strategy: steps
+eval_steps: 500

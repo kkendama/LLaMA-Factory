@@ -638,5 +638,66 @@
       "assistant_tag": "assistant",
       "system_tag": "system"
     }
+  },
+  "abeja1": {
+    "hf_hub_url": "Kendamarron/abeja1",
+    "columns": {
+      "prompt": "content"
+    }
+  },
+  "oscar_score2": {
+    "hf_hub_url":"Kendamarron/scored_oscar_ja",
+    "split": "score2",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "oscar_score3": {
+    "hf_hub_url":"Kendamarron/scored_oscar_ja",
+    "split": "score3",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "oscar_score4": {
+    "hf_hub_url":"Kendamarron/scored_oscar_ja",
+    "split": "score4",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "oscar_score5": {
+    "hf_hub_url":"Kendamarron/scored_oscar_ja",
+    "split": "score5",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "c4_score3": {
+    "hf_hub_url":"Kendamarron/filtered_c4_ja",
+    "split": "score3",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "c4_score4": {
+    "hf_hub_url":"Kendamarron/filtered_c4_ja",
+    "split": "score4",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "cosmopedia_ja": {
+    "hf_hub_url":"aixsatoshi/cosmopedia-japanese-100k",
+    "split": "train",
+    "columns": {
+      "prompt": "japanese"
+    }
+  },
+  "wiki_ja": {
+    "hf_hub_url":"Kendamarron/filtered_wiki_ja",
+    "columns": {
+      "prompt": "text"
+    }
   }
 }
