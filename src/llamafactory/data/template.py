@@ -417,6 +417,15 @@ _register_template(
     ),
 )
 
+_register_template(
+    name="alpaca_ja",
+    format_user=StringFormatter(slots=["### 指示:\n{{content}}\n\n### 応答:\n"]),
+    format_separator=EmptyFormatter(slots=["\n\n"]),
+    default_system=(
+        "以下は、タスクを説明する指示です。要求を適切に満たす応答を書きなさい。\n\n"
+    ),
+)
+
 
 _register_template(
     name="aquila",

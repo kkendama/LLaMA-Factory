@@ -8,7 +8,7 @@ finetuning_type: full
 
 ### dataset
 dataset: aya_evolved_it1
-template: llama3
+template: alpaca_ja
 cutoff_len: 4096
 overwrite_cache: true
 preprocessing_num_workers: 16
