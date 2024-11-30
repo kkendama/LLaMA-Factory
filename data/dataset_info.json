@@ -699,5 +699,19 @@
     "columns": {
       "prompt": "text"
     }
-  }
+  },
+  "aya_evolved_it0": {
+    "hf_hub_url": "Kendamarron/aya_dataset_ja_evolved_it0",
+    "columns": {
+      "prompt": "inputs",
+      "response": "output"
+    }
+  },
+  "aya_evolved_it1": {
+    "hf_hub_url": "Kendamarron/aya_dataset_ja_evolved_it1",
+    "columns": {
+      "prompt": "evolved_instruction",
+      "response": "output"
+    }
+  },
 }
