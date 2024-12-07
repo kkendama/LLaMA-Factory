@@ -713,5 +713,27 @@
       "prompt": "evolved_instruction",
       "response": "output"
     }
+  },
+  "cot_normal": {
+    "hf_hub_url": "Kendamarron/Magpie-Tanuki-8B-CoT",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "cot_math": {
+    "hf_hub_url": "Kendamarron/OpenMathInstruct-2-ja-CoT",
+    "columns": {
+      "prompt": "problem_ja",
+      "response": "cot_output",
+      "system": "system"
+    }
+  },
+  "abeja1_3m": {
+    "file_name": "/workspace/win/adopt/cc_3m.jsonl",
+    "columns": {
+      "prompt": "content"
+    }
   }
 }
